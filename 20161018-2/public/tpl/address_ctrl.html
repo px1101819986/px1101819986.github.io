@@ -1,0 +1,8 @@
+<div class="address-container">
+   <select ng-model='selProvice' ng-change='proviceChange()'>
+     <option value='{{item.id}}' ng-repeat='item in proviceData'>{{item.name}}</option>
+   </select>
+   <select ng-model='selCity'>
+     <option value='{{item.id}}' ng-repeat='item in cityDataFiltered'>{{item.name}}</option>
+   </select>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>angular.js</title>
+</head>
+<body>
+  <!--
+  通过在html标签中直接写ng- 指令的方式使用angular.js
+  ng-app ng-model为angular.js的内置指令
+  ng-app 一个页面只能出现一个
+  ng-model 用于绑定数据到模型上
+  我们可以把多个ng-model的值做计算处理
+  通过ng-init初始化数据值
+  ng-repeat 循环
+ -->
+    <div ng-app='' ng-init='a=0;b=0'>
+        <p>我的名字是:{{name +'&'+ nickName}}</p>
+        姓名:<input type="text" ng-model='name'>
+        昵称:<input type="text" ng-model='nickName'>
+        <p>{{a}}+{{b}}={{a+b}}</p>
+        <input type="number" ng-model='a'>+
+        <input type="number" ng-model='b'>
+    </div>
+    <script src="lib/angular.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>指令</title>
+</head>
+<body>
+  <div ng-app='app'>
+    <div first-ctrl data-name='第一个控件' data-val='ctrl-1'></div>
+    <first-ctrl data-name='第二个控件' data-val='ctrl-2'></first-ctrl>
+    <!-- <div class="first-ctrl"></div> -->
+    <!-- directive : first-ctrl -->
+    <!--
+    ng-controller内部定义的属性信息只在其内部有效果
+    -->
+    <div ng-controller='firstController'>
+      <p>{{title}}</p>
+      <!--
+      常见筛选器
+        filter  数据检索
+        uppercase 转大写
+        lowercase 转小写
+        orderBy   排序
+     -->
+      <input type="text" ng-model='txtName'>
+      <ul>
+        <!-- 通过ng-click触发一个点击事件 -->
+        <li ng-click='clickHandle()' ng-repeat='person in people | filter:txtName | orderBy:"age"'>
+          {{"我的名字是:"+ (person.name | uppercase) + ","+ (person.age | myFilter)}}
+          -{{person.age | currency}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="lib/angular.js"></script>
+  <script src="js/directive.js"></script>
+  <script src="js/firstCtrl.js"></script>
+</body>
+</html>

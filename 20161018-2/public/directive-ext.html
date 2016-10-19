@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>指令内容的扩展</title>
+  <style>
+    *{
+      /*设置css中和模型关于边框和间距的一个计算标准*/
+      box-sizing: border-box;
+    }
+    .containerTop{
+      background-color: #d5df1b;
+      width:200px;
+      height: 120px;
+    }
+    .address-container{
+      border: 1px solid #999999;
+    }
+    .address-container select{
+      display: block;
+      min-width: 120px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div ng-app='app' ng-controller='mainCtrl'>
+    <!--
+    控制标签的显示或者隐藏,值为bool值
+    ng-show true(显示) false(隐藏)
+    ng-hide true(隐藏) false(显示)
+   -->
+    <div class="containerTop" ng-show='divIsShow'></div>
+    <button ng-click="btnClickHandle()">{{divIsShow?'隐藏':'显示'}}</button>
+    <!--
+    ng-repeat 循环
+    ng-repeat='item in data'
+   -->
+   <!-- <select ng-model='sel' ng-change='selChange()' ng-options='item.label for item in data'>
+   </select> -->
+   <select ng-model='sel' ng-change='selChange()'>
+     <option ng-repeat='item in data' value="{{item}}">{{item.label}}</option>
+   </select>
+   <p>当前选择框选中的值为:{{sel}}</p>
+
+   <div address_ctrl></div>
+   <address_ctrl></address_ctrl>
+   <div address_ctrl></div>
+  </div>
+  <script src="lib/angular.js"></script>
+  <script src="js/directive-ext.js"></script>
+  <script src="js/address_ctrl.js"></script>
+</body>
+</html>

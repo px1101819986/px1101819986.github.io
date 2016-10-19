@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>angular.js服务</title>
+</head>
+<body>
+  <div ng-app='app' ng-controller='mainCtrl'>
+    <p>{{now | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+    <p ng-repeat='item in data'>{{item.title}}</p>
+  </div>
+  <script src="lib/angular.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/api.js"></script>
+</body>
+</html>
