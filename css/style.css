@@ -1,0 +1,449 @@
+/* Reset CSS
+ * --------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+    font-family:"Microsoft Yahei";
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption, th {
+    text-align: left;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+html{
+    font-size: 16px;
+}
+.section h3 {
+    text-align: center;
+    font: 20px "Microsoft Yahei";
+    color: #fff;
+}
+#topbar {
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
+    background-image: -o-linear-gradient(top, #3c3c3c 0%, #222 100%);
+    background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
+    color: #fff;
+    border-top: 1px solid #101010;
+    border-bottom: 1px solid #101010;
+    z-index: 999;
+}
+#topbar a {
+    color: #fff;
+}
+.logo {
+    float: left;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    margin-right: 8px;
+    line-height: 30px;
+    padding: 10px 0;
+}
+.nav {
+    float: left;
+}
+
+.nav li {
+    float: left;
+    width: 40px;
+    text-align: center;
+}
+.nav li a{
+    display: block;
+    padding:1rem 0.1rem;
+    font-size: .5rem;
+    line-height: 20px;
+}
+#topbar .nav li.active a {
+    color: #fff;
+    background-color: #080808;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about{
+    width:300px;
+    margin:20px auto;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+
+}
+.about .title{
+    width: 50%;
+    margin: 20px auto;
+    border-top:2px solid lightgoldenrodyellow;
+}
+.about .title h4{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.about-list{
+    float: left;
+    width: 100%;
+}
+.about-list li{
+    display: block;
+     width: 100%;
+     height: 2rem;
+ }
+.about-list li span{
+    float: left;
+}
+.about-list li p{
+    float: left;
+}
+.about-list li a{
+    color: #fff;
+    text-decoration: underline;
+}
+.skills{
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+h3.skill{
+    color:#76b852;
+    padding-bottom: 10px;
+}
+.skills .item{
+    float:left;
+    width:18rem;
+    margin-bottom: 1rem;
+}
+.skills .item h4{
+    float:left;
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-right:.8rem;
+}
+.skills .item .progress{
+    float: left;
+    width:16rem;
+}
+.skills .item .progress-bg{
+    height:1rem;
+    border-radius:6px;
+    background:#e6e6e6;
+}
+.skills .item .progress-bar{
+    height:1rem;
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+}
+.skills .item .progress-green{
+    background:#76b852;
+}
+.skills .item .progress-orange{
+    background:orange;
+}
+.skills .item .progress-purple{
+    background:purple;
+}
+.skills .item .progress-blue{
+    background:blue;
+}
+.skills .item .progress-yellow{
+    background:deepskyblue;
+}
+.skills .item .progress-brown{
+    background:brown;
+}
+.skills .item .progress-red{
+    background:tomato;
+}
+
+.works{
+    margin: 20px auto;
+}
+.works-list,.experience-list{
+    margin:0 auto;
+    width: 100%;
+    overflow: auto;
+}
+
+.works-list li{
+    float: left;
+    margin:.5rem;
+    background: #fff;
+    border: .3rem solid #fff;
+    position: relative;
+    width:40%;
+    overflow: hidden;
+}
+.works-list li a{
+    display: block;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.works-list li a img{
+    display:block;
+    width: 100%;
+    height: 100%;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+}
+.works-list li a img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+.works-list li .title-over{
+    position: absolute;
+    opacity: 0;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    width: 100%;
+    height:2rem;
+    bottom: 0;
+    left: 0;
+    background: #000;
+}
+.works-list li .title{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 2rem;
+    bottom: 0;
+    left:0;
+    text-align: center;
+    color: #ffffff;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+}
+
+.experience-list li{
+    float: left;
+    position: relative;
+    width:85%;
+    font-size:12px;
+    padding:0 2rem .8rem 2rem;
+}
+.experience-list li p{
+    line-height: 24px;
+}
+.experience-list li span{
+    display: block;
+    line-height: 1.5rem;
+    color: #00a000;
+}
+.experience-list li span em{
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #00a000;
+    border:2px solid #00a000;
+    border-radius:12px;
+}
+@media (min-width: 320px) {
+    .container {
+        width: 300px;
+    }
+    .logo{
+        width: auto;
+    }
+    .nav li {
+        float: left;
+        width: 55px;
+    }
+}
+@media (min-width: 375px) {
+    .container {
+        width: 350px;
+    }
+    .logo{
+        width: auto;
+    }
+    .nav li {
+        float: left;
+        width: 63px;
+    }
+}
+@media (min-width: 414px) {
+    .container {
+        width: 400px;
+    }
+    .logo{
+        width: auto;
+    }
+    .nav li {
+        float: left;
+        width: 70px;
+    }
+}
+@media (min-width: 520px) {
+    .container {
+        width: 500px;
+    }
+    .logo{
+        width: auto;
+    }
+    .nav li {
+        float: left;
+        width: 80px;
+    }
+}
+@media (min-width: 650px) {
+    .container {
+        width: 640px;
+    }
+    .logo{
+        width: auto;
+    }
+    .nav li {
+        float: left;
+        width: 80px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .nav li a{
+        display: block;
+        padding: 15px 5px;
+        line-height: 20px;
+    }
+    .works-list li{
+        float: left;
+        margin:.5rem;
+        background: #fff;
+        border: .5rem solid #fff;
+        position: relative;
+        width:9rem;;
+        overflow: hidden;
+    }
+    .about-list{
+        float: left;
+        width: 50%;
+    }
+    .experience-list li{
+        float: left;
+        width: 40%;
+    }
+    .nav li {
+        float: left;
+        width: 100px;
+    }
+    .about{
+        width: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+    .works-list li{
+        float: left;
+        margin:.5rem;
+        background: #fff;
+        border: .5rem solid #fff;
+        position: relative;
+        width:13rem;;
+        overflow: hidden;
+    }
+    .about-list{
+        float: left;
+        width: 50%;
+    }
+    .experience-list li{
+        float: left;
+        width: 40%;
+    }
+    .nav li {
+        float: left;
+        width: 100px;
+    }
+    .about{
+        width: 80%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    .works-list li{
+        float: left;
+        margin:.5rem;
+        background: #fff;
+        border: .5rem solid #fff;
+        position: relative;
+        width:16rem;;
+        overflow: hidden;
+    }
+    .about{
+        width: 80%;
+    }
+    .about-list{
+        float: left;
+        width: 50%;
+    }
+    .experience-list li{
+        float: left;
+        width: 40%;
+    }
+    .nav li {
+        float: left;
+        width: 100px;
+    }
+}

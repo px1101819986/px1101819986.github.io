@@ -1,19 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <!--设置编码格式-->
-  <meta charset="UTF-8">
-  <!--设置viewport-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--设置编码格式-->
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>这个页面使用ios中的</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>web前端工程师裴东兴的简历</title>
+    <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="https://cdn.bootcss.com/fullPage.js/2.8.6/jquery.fullPage.js"></script>
+    <script src="js/default.js"></script>
+
 </head>
-<!--体-->
- <body>
-  <h1>这是我的主页</hi>
-    <h1>这是东方闪电我的主页</hi>
-      <h1>这是东方闪电我的主页</hi>
-        <img src="/Users/mac/Desktop/px1101819986.github.io/.git/images/b.jpg" >
+<body>
+<div id="topbar">
+    <div class="container">
+        <div class="logo">裴东兴</div>
+        <ul class="nav" id="menu">
+            <li data-menuanchor="about" class="active"><a href="#about">个人简介</a></li>
+            <li data-menuanchor="skills"><a href="#skills">我的技能</a></li>
+            <li data-menuanchor="works"><a href="#works">我的作品</a></li>
+            <li data-menuanchor="experience"><a href="#experience">工作经历</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="fullpage">
+    <div class="section fp-noscroll">
+        <h3>个人信息</h3>
+        <div class="container">
+            <div class="about">
+                <ul class="about-list">
+                    <li>
+                        <span>姓名：</span>
+                        <p>裴东兴</p>
+                    </li>
+                    <li>
+                        <span>学历：</span>
+                        <p>大专</p>
+                    </li>
+                    <li>
+                        <span>电话：</span>
+                        <p>15829696246</p>
+                    </li>
+                    <li>
+                        <span>邮箱：</span>
+                        <p>306368553@qq.com</p>
+                    </li>
+
+                </ul>
+                <ul class="about-list edu">
+                    <li>
+                        <span>毕业学校：</span>
+                        <p>西安大学</p>
+                    </li>
+                    <li>
+                        <span>学历：</span>
+                        <p>大专</p>
+                    </li>
+                    <li>
+                        <span>专业：</span>
+                        <p>网络技术与信息处理</p>
+                    </li>
+                    <li>
+                        <span>爱好：</span>
+                        <p>看书，运动，游戏</p>
+                    </li>
+                </ul>
+                <!--<p style="clear:both; text-align: left;padding-top: 10px;color:#000">千里之行，始于足下。不忘初心方得始终。</p>-->
+                <p style="clear:both; text-align: left;font-size:14px;line-height:24px;padding-top: 10px; color:#000">要有回报就需要付出。千里之行，始于足下。勿忘初心，方得始终。</p>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-noscroll">
+        <div class="container">
+            <h3 class="skill">我的技能</h3>
+            <div class="skills">
+                <div class="item">
+                    <h4 class="title">Html&Css</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-orange" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="title">Javascript&jQuery</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-blue" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="title">Photoshop</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-purple" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="title">Node.js</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-green" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="title">Reactjs</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-yellow" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <h4 class="title">express&mongodb</h4>
+                    <div class="progress">
+                        <div class="progress-bg">
+                            <div class="progress-bar progress-red" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section fp-noscroll">
+        <div class="container">
+            <h3>我的作品</h3>
+            <div class="works">
+                <ul class="works-list" id="workList">
+                    <li>
+                        <a href="#"><img src="images/demo3.jpg"></a>
+                        <div class="title-over"></div>
+                        <div class="title">博地润泽</div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/demo2.png"></a>
+                        <div class="title-over"></div>
+                        <div class="title">移动端广告</div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/demo1.png"></a>
+                        <div class="title-over"></div>
+                        <div class="title">照片墙</div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/demo4.jpg"></a>
+                        <div class="title-over"></div>
+                        <div class="title">华君传媒</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container jingli">
+            <h3 class="skill">工作经历</h3>
+            <ul class="experience-list">
+                <li>
+                    <span><em>1</em>2015.06--2016.09  北京华昊联合科技有限公司</span>
+                    <p>
+                        根据产品设计图，使用Html,Css，Javascript完成静态页面的编写以及动态交互效果；<br/>
+                        根据客户需求，使用Bootstrap编写响应式页面；<br/>
+                        使用HTML5，CSS3，Animate.css等技术进行移动端网站的前端开发；<br/>
+                        配合后台开发人员，完成页面的数据交互功能；<br/>
+                        实现网站的整体页面风格，特效，JS效果；
+                    </p>
+                </li>
+                <li>
+                    <span><em>2</em>2010.07--2013.05 北京阳光盛景国际文化交流有限公司</span>
+                    <p>将设计师制作的效果图，用Html,Css编写为静态页面；<br/>
+                        使用Javascript，jQuery等完成特效的制作；<br/>
+                        制作团购网站，根据效果图进行模板编写，嵌套；<br/>
+                        在最土团购程序基础上进行二次开发；<br/>
+                        Discuz、织梦系统二次开发，模板嵌套。<br/>
+                    </p>
+                </li>
+                <li>
+                    <span><em>3</em>2008.06--2010.06  山东英网电子商务有限公司</span>
+                    <p>根据客户需求设计网站效果图，编写静态页面，制作特效；<br/>
+                        在刚刚兴起DIV+CSS时，率先使用进行静态页面的编写，得到了公司领导及同事的认可。
+                    </p>
+                </li>
+                <li>
+                    <span><em>4</em>2006.07--2008.05  济南雷欧网络科技有限公司</span>
+                    <p>
+                        负责域名及空间的销售咨询工作；<br/>
+                        对客户进行维护，回访；<br/>
+                        负责接听客户来电、 在线咨询等服务。
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
